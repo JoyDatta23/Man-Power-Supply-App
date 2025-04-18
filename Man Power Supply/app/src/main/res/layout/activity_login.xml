@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background_1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SIGN IN"
+        android:id="@+id/signIn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signIn"
+        android:layout_marginTop="30dp"
+        android:padding="20dp">
+
+
+        <!-- Login Form -->
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:elevation="5dp"
+            android:hint="Username"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/user_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:elevation="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/user_check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Username"
+            android:layout_below="@id/user_pass"
+            android:layout_alignLeft="@+id/user_pass"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <CheckBox
+            android:id="@+id/user_check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Password"
+            android:layout_below="@id/user_pass"
+            android:layout_toRightOf="@id/user_check1"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/already_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:layout_below="@id/user_check1"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@id/user_check1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/GoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@id/user_check1"
+            android:layout_toRightOf="@+id/already_account"
+            android:text="Sign Up"
+            android:textColor="#673AB7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/already_account"
+            android:layout_margin="30dp"
+            android:backgroundTint="#000000"
+            android:text="Login"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>

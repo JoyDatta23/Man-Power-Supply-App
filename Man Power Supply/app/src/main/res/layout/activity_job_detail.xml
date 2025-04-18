@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1">
+
+    <TextView
+        android:id="@+id/textViewJobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Job Title"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewJobDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Description"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewJobTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewJobDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewJobDescriptionLabel"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewSkillsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewJobDescription"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSkillsLabel"
+        android:layout_marginLeft="16dp">
+        <!-- Chips will be added here dynamically -->
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+    <TextView
+        android:id="@+id/textViewSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSkillsLabel"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewSalaryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salary"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewSkills"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSalaryLabel"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewDeadlineLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deadline"
+        android:textStyle="bold"
+        android:layout_below="@+id/textViewSalary"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDeadlineLabel"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textViewDeadline"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="#090909"
+        android:onClick="goBack"/>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textViewDeadline"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/btnGoBack"
+        android:backgroundTint="#000000"
+        android:onClick="apply"/>
+
+    <Button
+        android:id="@+id/btnMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textViewDeadline"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/btnApply"
+        android:backgroundTint="#000000"
+        />
+</RelativeLayout>
